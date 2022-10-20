@@ -1,7 +1,7 @@
 import torch
 from .base_model import BaseModel
 from models.networks_1to3 import define_net_three_decoder
-from torchviz import make_dot
+# from torchviz import make_dot
 import os
 from models.networks import PanTiltLoss, L1_LPIPS_SSIM
 
@@ -99,13 +99,12 @@ class ThreeDecoderModel(BaseModel):
 
             self.optimizers.append(self.optimizer_G)
 
-
-    def plot_model(self):
-        x1 = torch.rand(12, 3, 256, 256).to(self.device)
-        x2 = torch.rand(12, 7).to(self.device)
-        y = self.netG(x1, x2)
-        g = make_dot(y, params=dict(self.netG.named_parameters()))
-        g.render(filename='espnet_model', directory=self.expr_dir, view=False)
+    # def plot_model(self):
+    #     x1 = torch.rand(12, 3, 256, 256).to(self.device)
+    #     x2 = torch.rand(12, 7).to(self.device)
+    #     y = self.netG(x1, x2)
+    #     g = make_dot(y, params=dict(self.netG.named_parameters()))
+    #     g.render(filename='espnet_model', directory=self.expr_dir, view=False)
 
     def set_input(self, input):
         """Unpack input data from the dataloader and perform necessary pre-processing steps.

@@ -1,6 +1,6 @@
 import torch
 from .base_model import BaseModel
-from torchviz import make_dot
+# from torchviz import make_dot
 import os
 from models.networks_1to1 import define_net_one_decoder
 from models.networks import PanTiltLoss, L1_LPIPS_SSIM
@@ -62,13 +62,13 @@ class OneDecoderModel(BaseModel):
             self.optimizer_G = torch.optim.Adam(self.netG.parameters(), lr=opt.lr, betas=(opt.beta1, 0.999))
             self.optimizers.append(self.optimizer_G)
 
-    def plot_model(self):
-        # generator
-        x1 = torch.rand(12, 3, 256, 256).to(self.device)
-        x2 = torch.rand(12, 7).to(self.device)
-        y = self.netG(x1, x2)
-        g = make_dot(y, params=dict(self.netG.named_parameters()))
-        g.render(filename='netG', directory=self.expr_dir, view=False)
+    # def plot_model(self):
+    #     # generator
+    #     x1 = torch.rand(12, 3, 256, 256).to(self.device)
+    #     x2 = torch.rand(12, 7).to(self.device)
+    #     y = self.netG(x1, x2)
+    #     g = make_dot(y, params=dict(self.netG.named_parameters()))
+    #     g.render(filename='netG', directory=self.expr_dir, view=False)
 
     def set_input(self, input):
         """Unpack input data from the dataloader and perform necessary pre-processing steps.

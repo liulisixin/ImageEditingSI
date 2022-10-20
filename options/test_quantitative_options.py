@@ -38,7 +38,7 @@ class TestQuantitiveOptions(BaseOptions):
             self.load_iter = 0  # default='0', which iteration to load? if load_iter > 0, the code will load models by
             # iter_[load_iter]; otherwise, the code will load models by [epoch]
         elif which_experiment == 'exp_three_decoders':
-            self.name = 'exp_1to3_vidit'  # name of the experiment. It decides where to store samples and models
+            self.name = 'exp_1to3'  # name of the experiment. It decides where to store samples and models
             self.model_name = 'three_decoder'  # ['relighting_two_stage' | 'relighting_one_decoder']
             self.use_dropout_encoder = True
             self.use_dropout_decoder = True

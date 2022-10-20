@@ -1,0 +1,6 @@
+visdom==0.1.8.9
+tqdm==4.62.3
+pytorch-msssim==0.2.1
+lpips==0.1.4
+dominate==2.6.0
+Pillow==8.4.0
