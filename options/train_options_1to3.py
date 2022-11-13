@@ -4,13 +4,13 @@ from .base_options import BaseOptions
 class TrainOptions(BaseOptions):
     def __init__(self):
         super(TrainOptions, self).__init__()
-        which_experiment = 'exp_1to3_more_gpus'
+        which_experiment = 'exp_1to3'
         self.which_experiment = which_experiment
         self.isTrain = True
 
         # Setting for dataset
-        self.anno = 'data/check_generate_anno/SID1_train.txt'  # the anno file from prepare_dataset.py
-        self.anno_validation = 'data/check_generate_anno/SID1_val_pairs.txt'
+        self.anno = 'data/check_generate_anno/train.txt'  # the anno file from prepare_dataset.py
+        self.anno_validation = 'data/check_generate_anno/val_pairs.txt'
         # Setting for GPU
         number_gpus = 4
         self.gpu_ids = [i for i in range(number_gpus)]

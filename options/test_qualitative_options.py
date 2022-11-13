@@ -4,7 +4,7 @@ class TestOptions(BaseOptions):
     def __init__(self):
         super(TestOptions, self).__init__()
         self.isTrain = False
-        self.anno = 'data/check_generate_anno/SID1_test_qualitative_pairs_3.txt'  # the anno file from prepare_dataset.py
+        self.anno = 'data/check_generate_anno/test_qualitative_pairs_3.txt'  # the anno file from prepare_dataset.py
         self.dataset_mode = 'relighting_single_image_test'  # name of the dataset
         self.gpu_ids = [0]
         self.phase = 'test_qualitative_pairs_3'  # str, default='test', help='train, val, test, etc')

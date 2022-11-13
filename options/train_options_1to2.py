@@ -9,8 +9,8 @@ class TrainOptions(BaseOptions):
         self.isTrain = True
 
         # Setting for dataset
-        self.anno = 'data/check_generate_anno/SID1_train.txt'  # the anno file from prepare_dataset.py
-        self.anno_validation = 'data/check_generate_anno/SID1_val_pairs.txt'
+        self.anno = 'data/check_generate_anno/train.txt'  # the anno file from prepare_dataset.py
+        self.anno_validation = 'data/check_generate_anno/val_pairs.txt'
         # Setting for GPU
         number_gpus = 1
         self.gpu_ids = [i for i in range(number_gpus)]

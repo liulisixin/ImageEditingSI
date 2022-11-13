@@ -4,7 +4,7 @@ class TestQuantitiveOptions(BaseOptions):
     def __init__(self):
         super(TestQuantitiveOptions, self).__init__()
         which_experiment = 'exp_three_decoders'   # ['relighting' | 'intrinsic_decomposition']
-        self.anno = 'data/check_generate_anno/SID1_test_quantitative_pairs.txt'  # the anno file from prepare_dataset.py
+        self.anno = 'data/check_generate_anno/test_quantitative_pairs.txt'  # the anno file from prepare_dataset.py
         # save some general setting here.
         if which_experiment == 'exp':
             self.name = 'exp_1to1_vidit'  # name of the experiment. It decides where to store samples and models
