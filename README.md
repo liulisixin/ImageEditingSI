@@ -1,7 +1,7 @@
 # Image editing of light and color from a single image: a baseline framework
 The 30th Color and Imaging Conference (CIC30) (Oral)
 
-[link for paper] (The full paper will be released soon after published in the digital library of the conference.)
+[paper](https://library.imaging.org/admin/apis/public/api/ist/website/downloadArticle/cic/30/1/33)
 
 ## Getting Started
 - Clone this repo
