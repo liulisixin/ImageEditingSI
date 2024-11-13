@@ -25,3 +25,6 @@ then use the below command:
 python test_quantitative.py
 ```
 
+## Acknowledgments
+Some codes are borrowed from [pix2pix](https://github.com/phillipi/pix2pix). Thanks for their great works.
+
